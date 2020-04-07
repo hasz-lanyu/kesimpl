@@ -1,7 +1,9 @@
 package com.feding.kesimpl.oms.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.feding.kesimpl.oms.model.OrderReturnApply;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.feding.kesimpl.oms.vo.OrderReturnApplyParamVo;
 
 /**
  * <p>
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface OrderReturnApplyService extends IService<OrderReturnApply> {
 
+    IPage<OrderReturnApply> getOrderReturnApplyPageList(OrderReturnApplyParamVo orderReturnApplyParamVo);
 }

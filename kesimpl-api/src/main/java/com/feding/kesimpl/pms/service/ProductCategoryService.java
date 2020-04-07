@@ -1,7 +1,10 @@
 package com.feding.kesimpl.pms.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.feding.kesimpl.pms.model.ProductCategory;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ProductCategoryService extends IService<ProductCategory> {
 
+    List<ProductCategory> getProductCategoryList();
+
+    IPage<ProductCategory> getProductCategoryPageList(Long id ,Long pageNum, Long pageSize);
 }

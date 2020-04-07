@@ -2,6 +2,9 @@ package com.feding.kesimpl.cms.service;
 
 import com.feding.kesimpl.cms.model.PrefrenceArea;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.feding.kesimpl.cms.model.PrefrenceAreaProductRelation;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +15,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2020-03-11
  */
 public interface PrefrenceAreaService extends IService<PrefrenceArea> {
+
+    List<PrefrenceArea> getPrefrenceAreaList();
+
 
 }

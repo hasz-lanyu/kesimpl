@@ -1,5 +1,6 @@
 package com.feding.kesimpl.oms.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.feding.kesimpl.oms.model.OrderReturnReason;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface OrderReturnReasonService extends IService<OrderReturnReason> {
 
+    IPage<OrderReturnReason> getOrderReturnReasonPageList(Long pageNum, Long pageSize);
 }

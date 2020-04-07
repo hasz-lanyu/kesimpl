@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kesimpl-admin-web" />
+        <module name="kesimpl-api" />
+        <module name="kesimpl-cms" />
+        <module name="kesimpl-common" />
+        <module name="kesimpl-generator" />
+        <module name="kesimpl-oms" />
+        <module name="kesimpl-pms" />
+        <module name="kesimpl-sms" />
+        <module name="kesimpl-ums" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

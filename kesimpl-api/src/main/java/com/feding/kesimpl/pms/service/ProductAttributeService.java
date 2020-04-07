@@ -1,5 +1,6 @@
 package com.feding.kesimpl.pms.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.feding.kesimpl.pms.model.ProductAttribute;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ProductAttributeService extends IService<ProductAttribute> {
 
+    IPage<ProductAttribute> getProductAttributePageList(Long productAttributeCategoryId, Long pageNum, Long pageSize, Long type);
 }
